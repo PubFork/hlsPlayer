@@ -70,7 +70,8 @@ function playM3u8(url){
       }
     }
    });
-  var m3u8Url = decodeURIComponent(url)
+  var m3u8Url = decodeURIComponent(url);
+  console.log(m3u8Url);
   hls.loadSource(m3u8Url);
   hls.attachMedia(video);
   video.ontimeupdate = timeUpdateCallback;
