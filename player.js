@@ -104,3 +104,4 @@ $(window).bind('hashchange', function() {
   console.log(1);
   playM3u8(window.location.href.split("#")[1]);
 });
+playM3u8(window.location.href.split("#")[1]);
