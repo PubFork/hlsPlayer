@@ -42,15 +42,14 @@ function timeUpdateCallback() {
 }
 
 function playM3u8(url){
-  console.log(2);
   var video = document.getElementById('video');
-  if(native){
-    video.classList.add("native_mode");
-    video.classList.remove("zoomed_mode");
-  } else {
-    video.classList.remove("native_mode");
-    video.classList.add("zoomed_mode");
-  }
+  // if(native){
+  //   video.classList.add("native_mode");
+  //   video.classList.remove("zoomed_mode");
+  // } else {
+  //   video.classList.remove("native_mode");
+  //   video.classList.add("zoomed_mode");
+  // }
   if(hls){ hls.destroy(); }
   hls = new Hls({debug:debug});
   hls.on(Hls.Events.ERROR, function(event,data) {
