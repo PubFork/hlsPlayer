@@ -42,6 +42,7 @@ function timeUpdateCallback() {
 }
 
 function playM3u8(url){
+  console.log(2);
   var video = document.getElementById('video');
   if(native){
     video.classList.add("native_mode");
@@ -100,5 +101,6 @@ function playM3u8(url){
 // });
 
 $(window).bind('hashchange', function() {
+  console.log(1);
   playM3u8(window.location.href.split("#")[1]);
 });
